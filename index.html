@@ -3,15 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Casino - Welcome</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Luxury Casino | Play for Fun</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/themes.css">
 </head>
-<body>
-    <div class="welcome-container">
-        <h1>🎰 Welcome to Virtual Casino! 🎲</h1>
-        <p>Play with fake money - no real gambling!</p>
-        <button id="enterBtn">ENTER CASINO</button>
+<body class="welcome-page">
+    <div class="particles-background"></div>
+    
+    <div class="welcome-container fade-in">
+        <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 100 100">
+                <path d="M50 10 L90 50 L50 90 L10 50 Z" fill="#FFD700"/>
+                <circle cx="50" cy="50" r="30" fill="#C0C0C0"/>
+                <text x="50" y="60" text-anchor="middle" font-size="30" fill="#000">$</text>
+            </svg>
+            <h1>LUXURY CASINO</h1>
+        </div>
+        
+        <div class="welcome-content">
+            <p class="tagline">Experience the thrill without the risk!</p>
+            <p class="disclaimer">For entertainment purposes only. No real money involved.</p>
+            
+            <button class="enter-btn pulse">
+                <span>ENTER THE CASINO</span>
+                <svg class="icon-arrow" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </button>
+        </div>
     </div>
-    <script src="scripts.js"></script>
+    
+    <audio id="backgroundMusic" loop>
+        <source src="assets/sounds/background.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="js/main.js"></script>
 </body>
 </html>
