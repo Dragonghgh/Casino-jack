@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Casino Lobby</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/themes.css">
+</head>
+<body class="lobby-page">
+    <header class="casino-header">
+        <div class="header-content">
+            <div class="logo-small">
+                <svg class="logo-icon" viewBox="0 0 100 100">
+                    <path d="M50 10 L90 50 L50 90 L10 50 Z" fill="#FFD700"/>
+                </svg>
+                <span>LUXURY</span>
+            </div>
+            
+            <div class="user-wallet">
+                <div class="chip-stack">
+                    <div class="chip gold"></div>
+                    <div class="chip silver"></div>
+                    <div class="chip bronze"></div>
+                </div>
+                <div class="balance">$<span id="userBalance">10,000</span></div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="lobby-main">
+        <h2 class="section-title">SELECT YOUR GAME</h2>
+        
+        <div class="game-grid">
+            <!-- Slot Machine Card -->
+            <div class="game-card" data-game="slots">
+                <div class="game-icon">
+                    <svg viewBox="0 0 100 100">
+                        <!-- Slot machine SVG -->
+                    </svg>
+                </div>
+                <div class="game-info">
+                    <h3>Lucky Slots</h3>
+                    <p>Spin to win with our premium slot machines</p>
+                    <div class="game-stats">
+                        <span class="popular-tag">MOST POPULAR</span>
+                        <span class="jackpot">Jackpot: $50,000</span>
+                    </div>
+                </div>
+                <div class="play-btn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <!-- Blackjack Card -->
+            <div class="game-card" data-game="blackjack">
+                <!-- Similar structure as above -->
+            </div>
+            
+            <!-- Roulette Card -->
+            <div class="game-card" data-game="roulette">
+                <!-- Similar structure as above -->
+            </div>
+            
+            <!-- Poker Card -->
+            <div class="game-card" data-game="poker">
+                <!-- Similar structure as above -->
+            </div>
+            
+            <!-- Craps Card -->
+            <div class="game-card" data-game="craps">
+                <!-- Similar structure as above -->
+            </div>
+            
+            <!-- Baccarat Card -->
+            <div class="game-card" data-game="baccarat">
+                <!-- Similar structure as above -->
+            </div>
+        </div>
+    </main>
+    
+    <footer class="casino-footer">
+        <p>© 2023 Luxury Virtual Casino | For entertainment purposes only</p>
+        <div class="footer-links">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Help</a>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+    <script src="js/wallet.js"></script>
+</body>
+</html>
