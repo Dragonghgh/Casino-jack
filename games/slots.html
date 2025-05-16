@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Casino - Slots</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .slot-machine {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .slots {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .slot {
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            border-radius: 10px;
+        }
+        
+        #spinBtn {
+            background-color: #d4af37;
+            color: #000;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        .bet-controls {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="slot-machine">
+        <h1>Slot Machine</h1>
+        <div class="balance">Balance: $<span id="balance">1000</span></div>
+        
+        <div class="slots">
+            <div class="slot" id="slot1">🍒</div>
+            <div class="slot" id="slot2">🍋</div>
+            <div class="slot" id="slot3">🍊</div>
+        </div>
+        
+        <div class="bet-controls">
+            <label for="betAmount">Bet Amount: $</label>
+            <input type="number" id="betAmount" min="1" max="100" value="10">
+        </div>
+        
+        <button id="spinBtn">SPIN</button>
+        <p id="resultMessage"></p>
+        
+        <button onclick="location.href='../casino.html'">Back to Lobby</button>
+    </div>
+    
+    <script src="slots.js"></script>
+</body>
+</html>
