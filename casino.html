@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Casino - Lobby</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="casino-container">
+        <header>
+            <h1>Virtual Casino Lobby</h1>
+            <div class="balance">Balance: $<span id="balance">1000</span></div>
+        </header>
+        
+        <div class="game-selection">
+            <h2>Choose Your Game</h2>
+            
+            <div class="game-options">
+                <div class="game-card" onclick="location.href='games/slots.html'">
+                    <h3>Slot Machine</h3>
+                    <p>Try your luck with the slots!</p>
+                </div>
+                
+                <div class="game-card" onclick="location.href='games/blackjack.html'">
+                    <h3>Blackjack</h3>
+                    <p>Beat the dealer to 21!</p>
+                </div>
+                
+                <div class="game-card" onclick="location.href='games/roulette.html'">
+                    <h3>Roulette</h3>
+                    <p>Bet on your lucky number!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
