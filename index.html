@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxury Casino | Play for Fun</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/themes.css">
+    <style>
+        /* Temporary in-page styles until we fix the image size */
+        .welcome-page {
+            background: radial-gradient(ellipse at center, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .particles-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background: url('assets/images/particles.png') center/cover no-repeat;
+            opacity: 0.2;
+            transform: scale(0.5); /* Reduced size */
+        }
+    </style>
 </head>
 <body class="welcome-page">
     <div class="particles-background"></div>
@@ -26,7 +48,7 @@
             <p class="tagline">Experience the thrill without the risk!</p>
             <p class="disclaimer">For entertainment purposes only. No real money involved.</p>
             
-            <button class="enter-btn pulse">
+            <button id="enterCasinoBtn" class="enter-btn pulse">
                 <span>ENTER THE CASINO</span>
                 <svg class="icon-arrow" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -35,10 +57,24 @@
         </div>
     </div>
     
-    <audio id="backgroundMusic" loop>
-        <source src="assets/sounds/background.mp3" type="audio/mpeg">
-    </audio>
-    
-    <script src="js/main.js"></script>
+    <!-- JavaScript at the bottom of the body -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const enterBtn = document.getElementById('enterCasinoBtn');
+            
+            if (enterBtn) {
+                enterBtn.addEventListener('click', function() {
+                    // Simple redirect to lobby page
+                    window.location.href = 'lobby.html';
+                    
+                    // For a fancier transition (uncomment if you want):
+                    // document.querySelector('.welcome-container').classList.add('fade-out');
+                    // setTimeout(() => {
+                    //     window.location.href = 'lobby.html';
+                    // }, 500);
+                });
+            }
+        });
+    </script>
 </body>
 </html>
